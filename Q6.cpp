@@ -8,7 +8,7 @@ int reverse(int n,int a,int b)
     int counta=0,countb=0;
     int rem;
     
-    while(temp!=0)
+    do
     {
         rem=temp%10;
         if(rem==a)
@@ -16,7 +16,7 @@ int reverse(int n,int a,int b)
         if(rem==b)
             countb++;
         temp=temp/10;
-    }
+    }while(temp!=0);
     return abs(counta-countb);
 }
 int main()
