@@ -16,7 +16,7 @@ int reverse(int n)
         temp=temp/10;
     }
     if(c==1)
-        return n;
+        return n-1;
     else
         return pd-sum;   
 }
